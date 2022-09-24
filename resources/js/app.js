@@ -2,11 +2,11 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-Vue.component('index', require('./components/IndexComponent.vue').default);
-Vue.component('all-product', require('./components/ProductComponent.vue').default);
-Vue.component('index-cart', require('./components/IndexCart.vue').default);
-Vue.component('cart-table', require('./components/CartTable.vue').default);
-Vue.component('cart', require('./components/CartComponent.vue').default);
+Vue.component('app', require('./components/App.vue').default);
+Vue.component('all-product', require('./components/Product.vue').default);
+Vue.component('table-cart', require('./components/TableCart.vue').default);
+Vue.component('table-all', require('./components/TableAll.vue').default);
+Vue.component('cart', require('./components/Cart.vue').default);
 
 const app = new Vue({
     el: '#app',
